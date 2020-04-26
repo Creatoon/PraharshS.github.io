@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
+
+
 }
 
 .container {
@@ -12,35 +14,64 @@
 
 }
 
+body {
+    width: 100%;
 
+}
+
+a {
+    transition: ease-in-out .5s;
+}
+
+.cta-btn1:hover {
+    color: #2C592D !important;
+    background: white !important;
+}
+
+.cta-btn2:hover {
+    color: #2C592D !important;
+    background: white !important;
+}
+
+.cta-btn3:hover {
+    color: #2C592D !important;
+    background: white !important;
+}
 
 
 
 #header {
     background-image: url(./i-love-coding.png);
     height: 100vh;
-    width: 100vw;
+
     position: relative;
     background-size: cover;
 
 }
+
+
 
 .main-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 2px;
+
+
 }
 
 .logo {
-    box-shadow: 0.1rem 0 .2rem #2C592D;
-    cursor: pointer;
-    height: 60px;
-    width: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 1rem;
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .nav-list {
     list-style-type: none;
+    margin-top: 1rem;
 }
 
 .nav-item {
@@ -61,15 +92,28 @@
 
 }
 
-.cta-btn {
+.cta-btn1 {
+    margin-top: 1rem;
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .8rem;
-    border-radius: 4rem;
-    background-color: black;
-    padding: 4px;
+    color: black;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: white;
+    padding: 4px 10px;
+}
+
+.cta-btn {
     color: white;
-    transition: ease-in 1s 1s;
+    font-size: 1.2rem;
+    padding: 4px;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 3%, rgba(44, 89, 45, 1) 47%, rgba(44, 89, 45, 1) 79%);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .cta-btn:hover {
@@ -80,7 +124,7 @@
 .main-text {
     position: absolute;
     right: 3rem;
-    top: 42%;
+    top: 50%;
 }
 
 .main-text {
@@ -92,6 +136,8 @@
 
 .main-text span {
     font-size: 1rem;
+    float: right;
+
 }
 
 /*MAIN PAGE*/
@@ -102,11 +148,21 @@
     height: 100vh;
 }
 
+.heading {
+
+    margin-bottom: 3rem;
+    padding: 0 10rem;
+}
+
+
 .heading h2 {
     text-align: center;
 
     font-size: 3rem;
     font-weight: 800;
+    border-bottom: 1px solid #2C592D;
+
+
 
 }
 
@@ -172,12 +228,13 @@
 
     height: 72%;
     align-items: center;
-    text-align: left;
+    text-align: center;
+    width: 30%;
 
     box-shadow: 5px 5px 5px black;
     margin-left: 2rem;
     font-family: "Montserrat";
-    background-image: url(./bg.jpg);
+    background-color: black;
     background-size: cover;
 
 }
@@ -194,9 +251,10 @@
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: .1rem;
-    padding: 12px;
+    padding: 10px;
+    color: white;
 
 
 }
@@ -211,6 +269,8 @@
     margin-top: 2.5rem;
     align-items: center;
     box-shadow: 1rem 1rem 1rem black;
+    height: 12.5rem;
+
 
 
 }
@@ -225,21 +285,33 @@
 
 .plat-left img {
     width: 100%;
+    height: 100%;
 
 }
 
 .plat-right {
+    position: relative;
     flex-basis: 75%;
     margin-left: 2rem;
     max-width: 90%;
     font-size: 1.1rem;
     font-weight: 300;
-    align-items: center;
+
+    height: 100%;
+
+}
+
+.web-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 
 }
 
 .plat-para {
-    height: 80%;
+    height: 90%;
+
 }
 
 
@@ -249,14 +321,7 @@
 
 }
 
-.web-link {
-    text-align: end;
-    text-align: center;
 
-
-
-    margin-top: 2px;
-}
 
 .btn1 {
     padding-top: 10rem;
@@ -286,7 +351,7 @@
 
 .tech-image {
     flex-basis: 50%;
-    object-fit: cover;
+
 
 }
 
@@ -301,6 +366,7 @@
 
 .tech-image img {
     width: 100%;
+    object-fit: cover;
 }
 
 .contests {
@@ -309,19 +375,20 @@
 
 .contest-wrapper {
     display: flex;
-    height: 35rem;
+    height: 90%;
     width: 100%;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: -5rem;
 
 }
 
 .contest {
     width: 33%;
+    height: 80%;
 
-    margin: 1rem 2rem;
+    margin: 7rem 2rem;
     align-items: center;
-    text-align: center;
+
     box-shadow: 1rem 1rem 1rem;
 }
 
@@ -336,19 +403,18 @@
 
 .contest-text {
     width: 100%;
-    height: 100%;
+    height: 30%;
+    text-align: center;
+    margin-top: 5rem;
 
-
-}
-
-.tex1 {
-    padding-top: 2rem;
 }
 
 .contest-text h2 {
-    margin-top: 3rem;
-    font-size: 3.2rem;
+    padding-top: 2rem;
 }
+
+
+
 
 .social {
     margin-top: 4rem;
@@ -370,4 +436,42 @@
 
 .social-icons img {
     margin-left: 2rem;
+}
+
+
+
+.cta-btn3 {
+
+
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cta-btn3 a {
+    background: black;
+
+    border-radius: 4rem;
+    padding: 4px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.web-link {
+    text-align: end;
+    font-size: 1rem;
+    position: relative;
+
+}
+
+.web-link a {
+    background: black;
+    position: absolute;
+    right: 1rem;
+    bottom: -8px;
+    border-radius: 4rem;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
 }
